@@ -109,6 +109,8 @@ LL.addElementToLL(50);
 LL.addElementToLL(60);
 LL.addElementToLL(70);
 LL.getElementAtNthPositionLL(7)
-LL.getElementsFromLL()
 LL.getElementFromNthLastFromLL(1)
+LL.getElementsFromLL()
+getLength()
+
 module.exports = LinkedList
