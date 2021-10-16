@@ -75,7 +75,7 @@ class LinkedList {
       }
     }
   }
-
+ 
   // get data from nth position from  last
   getElementFromNthLastFromLL(position) {
     if (this.head === null) {
@@ -111,6 +111,6 @@ LL.addElementToLL(70);
 LL.getElementAtNthPositionLL(7)
 LL.getElementFromNthLastFromLL(1)
 LL.getElementsFromLL()
-getLength()
+LL.getLength()
 
 module.exports = LinkedList
