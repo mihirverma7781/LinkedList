@@ -133,6 +133,6 @@ LL.addElementToLL(70);
 // LL.getElementFromNthLastFromLL(1);
 // LL.getElementsFromLL();
 // LL.getLength();
-// LL.newApproach(5)
+LL.newApproachForLastNthode(5)
 
 module.exports = LinkedList;
