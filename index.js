@@ -90,7 +90,6 @@ class LinkedList {
         if (count === position) {
           console.log(currentNode.data);
           return currentNode.data;
-          break;
         }
         currentNode = currentNode.next;
         count -= 1;
