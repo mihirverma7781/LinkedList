@@ -32,11 +32,11 @@ class LinkedList {
     if (this.head === null) {
       console.log("there are no elements in LL");
     } else {
-        let arr = [];
+      let arr = [];
       let currentNode = this.head;
       while (currentNode) {
         console.log(currentNode.data);
-        arr.push(currentNode.data)
+        arr.push(currentNode.data);
         currentNode = currentNode.next;
       }
       console.log(arr);
@@ -51,7 +51,7 @@ class LinkedList {
       return null;
     } else {
       console.log(this.sizeOfLL);
-      return this.sizeOfLL
+      return this.sizeOfLL;
     }
   }
 
@@ -75,7 +75,7 @@ class LinkedList {
       }
     }
   }
- 
+
   // get data from nth position from  last
   getElementFromNthLastFromLL(position) {
     if (this.head === null) {
@@ -97,6 +97,28 @@ class LinkedList {
       }
     }
   }
+
+  newApproachForLastNthode(position){
+    if (this.head === null) {
+      console.log("there are no elements in LL");
+    }
+    if (this.sizeOfLL < position) {
+      console.log("Yu have entered invalid position");
+    }
+    else{
+      let first = this.head
+      let second = this.head
+      for (let i = 1; i <= position; i++) {
+        second = second.next
+      }
+      while(second){
+        first = first.next;
+        second = second.next;
+      }
+      console.log(first.data)
+      return first.data
+    }
+  }
 }
 
 const LL = new LinkedList();
@@ -108,9 +130,10 @@ LL.addElementToLL(40);
 LL.addElementToLL(50);
 LL.addElementToLL(60);
 LL.addElementToLL(70);
-LL.getElementAtNthPositionLL(7)
-LL.getElementFromNthLastFromLL(1)
-LL.getElementsFromLL()
-LL.getLength()
+// LL.getElementAtNthPositionLL(7);
+// LL.getElementFromNthLastFromLL(1);
+// LL.getElementsFromLL();
+// LL.getLength();
+// LL.newApproach(5)
 
-module.exports = LinkedList
+module.exports = LinkedList;

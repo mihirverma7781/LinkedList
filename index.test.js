@@ -31,7 +31,7 @@ describe("#get nth element from first", () => {
 });
 
 
-describe("#get nth element from first", () => {
+describe("#get nth element from last", () => {
   test("getElementFromNthLastFromLL", () => {
     const y = new LinkedList();
     y.addElementToLL(10);
@@ -39,6 +39,17 @@ describe("#get nth element from first", () => {
     y.addElementToLL(30);
     y.addElementToLL(40);
     expect(y.getElementFromNthLastFromLL(3)).toBe(20);
+  });
+});
+
+describe("#get nth element from last new approach", () => {
+  test("newApproachForLastNthode", () => {
+    const y = new LinkedList();
+    y.addElementToLL(10);
+    y.addElementToLL(20);
+    y.addElementToLL(30);
+    y.addElementToLL(40);
+    expect(y.newApproachForLastNthode(3)).toBe(20);
   });
 });
 
