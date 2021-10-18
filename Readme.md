@@ -16,6 +16,9 @@
 #### 5) getElementFromNthLastFromLL
 ###### => this method will return the nth element from the end of the linked list.
 
+#### 6) newApproachForLastNthode
+###### => this method will return the nth element from the end of the linked list.
+
 
 ## To run the test cases use:
 #### `npm test`
